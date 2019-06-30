@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"protos" // 此为自定义的protos包，存放的是.proto文件和对应的.pb.go文件
+	"./protos" // 此为自定义的protos包，存放的是.proto文件和对应的.pb.go文件
 
 	"golang.org/x/net/context"
 

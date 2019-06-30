@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"protos"
+	"../../protos"
 	"strconv"
 
 	"golang.org/x/net/context"

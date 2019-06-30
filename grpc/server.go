@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"net"
-	"proj/service" // 实现了服务接口的包service
-	"protos" // 此为自定义的protos包，存放的是.proto文件和对应的.pb.go文件
+	"./proj/service" // 实现了服务接口的包service
+	"./protos" // 此为自定义的protos包，存放的是.proto文件和对应的.pb.go文件
 
 	"google.golang.org/grpc"
 )
