@@ -21,7 +21,7 @@ var (
 
 func main() {
 	// 创建grpc的服务连接
-	conn, err := grpc.Dial(*address)
+	conn, err := grpc.Dial(*address, grpc.WithInsecure())
 	if err != nil {
 		log.Fatal("failed to connect : ", err)
 	}
