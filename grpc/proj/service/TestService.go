@@ -3,7 +3,6 @@ package service
 import (
 	"fmt"
 	"io"
-	"log"
 	"../../protos"
 	"strconv"
 
