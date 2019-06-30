@@ -14,14 +14,14 @@ import (
 
 var (
 	// 命令行参数-host，默认地址本机9000端口
-	addr = flag.String("host", "127.0.0.1:9000", "")
+	address = flag.String("host", "127.0.0.1:9000", "")
 	// UserService服务存根，可直接调用服务方法
 	userCli protos.IUserServiceClient
 )
 
 func main() {
 	// 创建grpc的服务连接
-	conn, err := grpc.Dial(*addr)
+	conn, err := grpc.Dial(*address)
 	if err != nil {
 		log.Fatal("failed to connect : ", err)
 	}
